@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>KM Drone Solutions</title>
+  </head>
+  <body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"><img src="media/logo.svg" id="logo"/></a></div>
+            <ul class="links">
+                <li><a href="here">SERVICES</a></li>
+                <li><a href="portfolio">GALLERY</a></li>
+                <li><a href="about">ABOUT</a></li>
+            </ul>
+            <a href="#" class="action_btn">CONTACT</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="here">Services</a></li>
+            <li><a href="portfolio">Portfolio</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="#" class="action_btn">CONTACT</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>TRUSTED.</h1>
+            <h1>FAA CERTIFIED.</h1>
+            <h1>PILOT.</h1>
+            <p>Servicing Middle Tennessee and Fort Myers, FL</p>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="65" viewBox="0 0 19 20" id="scroll"><g fill="none" fill-rule="evenodd"><g fill="#fff" transform="translate(-420 -760)"><g transform="translate(56 160)"><path d="M369.277 604c.583 0 1.055-.448 1.055-1v-2c0-.552-.472-1-1.055-1-.582 0-1.055.448-1.055 1v2c0 .552.473 1 1.055 1m4.02 10.464l-1.915 1.683c-.332.315-1.05.092-1.05-.354v-5.136c0-.553-.472-1-1.055-1-.582 0-1.055.447-1.055 1v5.134c0 .446-.419.669-.75.354l-1.746-1.681a1.02 1.02 0 0 0-1.431 0c-.413.39-.382 1.024.03 1.415l3.37 3.18.385.356c.824.78 2.166.78 2.989 0l3.739-3.537a.963.963 0 0 0 .012-1.414 1.138 1.138 0 0 0-1.523 0m9.48-6.104l-4.123 2.156a1.088 1.088 0 0 1-1.33-.122.973.973 0 0 1 .137-1.524l1.259-.87h-8.963c-.582 0-1.059-.414-1.059-.967 0-.71.679-.967 1.05-.967l5.314-.007.404-4.318c.337-.957 1.284-1.526 2.327-1.328l3.744.332c.986.187 1.456 1.008 1.456 1.961v4.835c0 .329.07.633-.217.819"></path></g></g></g></svg>
+    </main>
+    <script>
+        const togglebtn = document.querySelector('.toggle_btn')
+        const togglebtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        togglebtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            togglebtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+  </body>
+</html>
