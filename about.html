@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>KM Drone Solutions</title>
+    <style>
+        .logo-section {
+        background-image: url('/media/Rectangle 77about_background.png');
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo-section img {
+        width: 500px;
+        height: auto;
+      }
+      .header {
+        background-color: #131313;
+      }
+    </style>
+  </head>   
+  <body class="about-class">
+
+    <header style="background-color: #131313;">
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="media/logo.svg" id="logo"/></a></div>
+            <ul class="links">
+                <li><a href="here">SERVICES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="about">ABOUT</a></li>
+            </ul>
+            <a href="#" class="action_btn">CONTACT</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="here">Services</a></li>
+            <li><a href="portfolio">Portfolio</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="#" class="action_btn">CONTACT</a></li>
+        </div>
+    </header>  
+    <section class="logo-section">
+        <img src="media\Group 10about_logo.svg" alt="Logo">
+      </section>  
+    <main>
+        <h1>About Page</h1>
+    </main>
+    <script>
+        const togglebtn = document.querySelector('.toggle_btn')
+        const togglebtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        togglebtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            togglebtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+  </body>
+</html>

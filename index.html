@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>KM Drone Solutions</title>
+    <style>
+.drone-operator-section {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 66px 45px 22px 14px;
+}
+
+.content-wrapper {
+  align-self: flex-end;
+  width: 100%;
+  max-width: 1786px;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.logo-and-text {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.inner-content {
+  display: flex;
+  gap: 20px;
+}
+
+.logo-column {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.logo {
+  aspect-ratio: 0.99;
+  object-fit: contain;
+  object-position: center;
+  width: 167px;
+  align-self: center;
+  max-width: 100%;
+}
+
+.secondary-logo {
+  aspect-ratio: 2.87;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  margin-top: 81px;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+}
+
+.text-content {
+  display: flex;
+  margin-top: 25px;
+  flex-direction: column;
+  font-family: Inter, sans-serif;
+  color: #000;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2.88px;
+  align-self: center;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 3.2px;
+  margin-top: 43px;
+}
+
+.cta-buttons {
+  align-self: flex-end;
+  display: flex;
+  width: 423px;
+  max-width: 100%;
+  gap: 20px;
+  text-align: center;
+  justify-content: space-between;
+  margin: 19px 154px 0 0;
+  font: 800 20px Inter, sans-serif;
+}
+
+.learn-more-btn {
+  color: #6cd4f4;
+  margin: auto 0;
+}
+
+.contact-btn {
+  border-radius: 24px;
+  background-color: #6cd4f4;
+  color: #fff;
+  padding: 27px 36px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.side-image {
+  aspect-ratio: 0.68;
+  object-fit: contain;
+  object-position: center;
+  width: 307px;
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+.footnote {
+  color: #000;
+  letter-spacing: 1.08px;
+  text-align: center;
+  align-self: flex-start;
+  margin-top: 36px;
+  font: 300 12px Inter, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .drone-operator-section {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+
+  .content-wrapper {
+    max-width: 100%;
+  }
+
+  .main-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .left-column,
+  .text-column,
+  .logo-column {
+    width: 100%;
+  }
+
+  .logo-and-text,
+  .logo-wrapper,
+  .text-content {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .secondary-logo,
+  .description {
+    margin-top: 40px;
+  }
+
+  .cta-buttons {
+    margin-right: 10px;
+  }
+
+  .contact-btn {
+    padding: 0 20px;
+  }
+
+  .right-column {
+    width: 100%;
+  }
+
+  .side-image {
+    margin-top: 40px;
+  }
+
+  .footnote {
+    max-width: 100%;
+  }
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.brand-logo img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 25px;
+  align-content: center;
+}
+
+.text-content {
+  flex: 1;
+  margin: 0 20px;
+  max-width: 600px;
+}
+
+.text-content h1 {
+  color: black;
+  font: 700 24px Inter, sans-serif;
+}
+
+.text-content p {
+  font: 300 16px Inter, sans-serif;
+  color: black;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.buttons {
+  margin-top: 50px;
+}
+
+.buttons button {
+  background-color: #6CD4F4;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  margin-right: 10px;
+  border-radius: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font: 700 15px Inter, sans-serif;
+}
+
+.buttons button:hover {
+  background-color: #55b6d3;
+}
+
+.drone-image img {
+  max-width: 300px;
+}
+
+@media (max-width: 991px) {
+  .banner {
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .brand-logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .text-content {
+    margin: 20px 0;
+    max-width: 100%;
+  }
+
+  .drone-image img {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .buttons {
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+    </style>
+  </head>
+  <body class="index-class-body">
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="https://www.example.com/">
+            <img src="media/logo.svg" id="logo" />
+          </a>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="#services-section">SERVICES</a>
+          </li>
+          <li>
+            <a href="gallery.html">GALLERY</a>
+          </li>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+        </ul>
+        <a href="contact.html" class="action_btn">CONTACT</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li>
+          <a href="here">Services</a>
+        </li>
+        <li>
+          <a href="portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="about">About</a>
+        </li>
+        <li>
+          <a href="mailto:example@example.com" class="action_btn">CONTACT</a>
+        </li>
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <h1>TRUSTED.</h1>
+        <h1>FAA CERTIFIED.</h1>
+        <h1>PILOT.</h1>
+        <p style="font-style: italic;">Servicing Middle Tennessee and Fort Myers, FL</p>
+      </section>
+      <div class="icon-bottom-right">
+        <i class="fa-solid fa-circle-down" style="color: #ffffff;"></i>
+      </div>
+    </main>
+    <div>
+      <section class="space-section" style="background-color: #242424; padding: 10px;"></section>
+    </div>
+    <div>
+      <section class="banner">
+        <div class="brand-logo" style="display: flex; flex-direction: column; margin-right: 250px;">
+          <img style="max-width: 120px; margin-left: 40px;" src="media\image 3faa_logo.png" alt="FAA Logo">
+          <img src="media\image 2trust_logo.png" alt="Trust Logo">
+        </div>
+      
+        <div class="text-content" style="flex-grow: 1; padding: 0 20px; max-width: 600px;">
+          <h1 style="margin-bottom: 20px;">The Top Drone Operator in Middle Tennessee and Fort Myers Area</h1>
+          <p>As a certified FAA Part 107 Drone Operator and *TRUST certified for recreational use, I possess a wide range of certifications that demonstrate my expertise. My qualifications ensure adherence to the highest standards of safety and professionalism, equipping me to handle various drone-related tasks and challenges.</p>
+          <div class="buttons">
+            <button style="border: 3px solid #6CD4F4; background-color: white; color: #6CD4F4; padding: 14px 28px; font-size: 16px; cursor: pointer;" id="learnMore-btn">LEARN MORE</button>
+            <button onclick="location.href='url-to-contact-page'">CONTACT ME</button>
+          </div>
+        </div>
+        <div class="drone-image">
+          <img style="margin-left: 250px;" src="media\Group 12.png" alt="Aerial View Photography">
+        </div>
+      </section>
+      
+    </div>
+    <div>
+      <section class="services-section" id="services-section">
+        <div class="services-container">
+          <div class="cards-container">
+            <div class="card">
+              <img src="media/DJI_0058.jpg" alt="Service 1">
+              <div class="card-description">
+                <h1>REAL ESTATE</h1>
+                <p>Capture stunning aerial views with our real estate drone service, showcasing properties with breathtaking clarity, enhancing listings effortlessly.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="media\DJI_0009 (1).JPG" alt="Service 2">
+              <div class="card-description">
+                <h1>AERIAL INSPECTIONS</h1>
+                <p>Perform precise and efficient aerial inspections with our drone service, ensuring detailed assessments for safer, faster decision-making.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="media\istockphoto-1136979326-612x612.jpg" alt="Service 3">
+              <div class="card-description">
+                <h1>EVENTS</h1>
+                <p>Elevate your event with our drone service, capturing dynamic aerial footage that highlights every moment and creates unforgettable memories.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="media\DJI_0070.JPG" alt="Service 4">
+              <div class="card-description">
+                <h1>CONSTRUCTION</h1>
+                <p>Monitor construction progress with our drone service, providing clear aerial views for accurate inspections and efficient project management.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="media\DJI_0070.JPG" alt="Service 4">
+              <div class="card-description">
+                <h1>MARKETING</h1>
+                <p>Boost your marketing with our drone service, delivering captivating aerial footage that grabs attention and elevates your brand's visual impact.</p>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+    <script>
+      const togglebtn = document.querySelector('.toggle_btn')
+      const togglebtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+      togglebtn.onclick = function() {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+        togglebtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+      }
+    </script>
+  </body>
+  <footer>
+    <div>
+      <section class="main-footer">
+        <div>
+          <a href="https://www.example.com/">
+            <img style="height: 100px;width: 200px;" src="media/logo.svg" />
+          </a>
+        </div>
+        <div style="line-height: 1.5;">
+          <h2>QUICK LINKS</h2>
+          <ul style="text-indent: 25px; font-size: medium;">
+            <li>SERVICES</li>
+            <li>GALLERY</li>
+            <li>CONTACT</li>
+            <li>PAY AN INVOICE</li>
+          </ul>
+        </div>
+        <div style="line-height: 1.5;">
+          <h2>LET'S CONNECT</h2>
+          <ul style="text-indent: 10px; font-size: medium;">
+            <li id="list-phone">
+              <i class="fa-solid fa-phone" style="color: #6CD4F4;"></i> 123-456-7890
+            </li>
+            <li id="list-email" style="height: 35px;">
+              <i class="fa-solid fa-envelope" style="color: #6CD4F4; "></i> example@email.com
+            </li>
+            <li>
+              <a href="mailto:example@example.com" class="footer_btn">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <p>© 2024 All Rights Reserved | KM Drone Solutions </p>
+  </footer>
+</html>
