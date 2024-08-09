@@ -335,7 +335,6 @@ li:list-email{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 80px; /* Adjust margin to create space below the logo */
 }
 .card {
     background: #fff;
