@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
     <title>KM Drone Solutions</title>
     <style>
 .drone-operator-section {
@@ -205,6 +205,9 @@
   }
 }
 
+.drone-image {
+  margin-left: 250px;
+}
 .banner {
   display: flex;
   flex-wrap: wrap;
@@ -216,6 +219,9 @@
   text-align: center;
 }
 
+.brand-logo {
+  display: flex; flex-direction: column; margin-right: 250px;
+}
 .brand-logo img {
   max-width: 200px;
   height: auto;
@@ -245,21 +251,6 @@
   margin-top: 50px;
 }
 
-.buttons button {
-  background-color: #6CD4F4;
-  color: white;
-  border: none;
-  padding: 15px 35px;
-  margin-right: 10px;
-  border-radius: 17px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font: 700 15px Inter, sans-serif;
-}
-
-.buttons button:hover {
-  background-color: #55b6d3;
-}
 
 .drone-image img {
   max-width: 300px;
@@ -275,6 +266,7 @@
   .brand-logo {
     margin-right: 0;
     margin-bottom: 20px;
+    flex-direction: row;
   }
 
   .text-content {
@@ -282,17 +274,75 @@
     max-width: 100%;
   }
 
+  .drone-image {
+    flex-direction: column;
+    justify-content: center;
+  }
   .drone-image img {
+    align-content: center;
     margin-left: 0;
     max-width: 100%;
+    align-self: center;
   }
 
   .buttons {
+    flex-direction: row;
     justify-content: center;
     margin-top: 30px;
   }
 }
 
+.text-content {
+  flex-grow: 1;
+  padding: 0 20px;
+  max-width: 600px;
+}
+
+.buttons button {
+  padding: 15px 35px;
+  margin-right: 10px;
+  border-radius: 17px;
+  cursor: pointer;
+  font: 700 15px Inter, sans-serif;
+}
+
+#contact-btn {
+  background-color: #6CD4F4;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#contact-btn:hover {
+  background-color: #55b6d3;
+}
+
+
+#learnMore-btn { 
+  border: 3px solid #6CD4F4 ;
+  background-color:  white ;
+  color: #6CD4F4 ;
+  padding: 12px 28px ;
+  font-size: 16px ; 
+  cursor: pointer ;
+}
+
+#learnMore-btn:hover {
+  background: #6CD4F4;
+  color: white;
+}
+
+
+
+ #hero video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1; /* Ensures the video stays behind other content */
+ }
     </style>
   </head>
   <body class="index-class-body">
@@ -336,6 +386,14 @@
     </header>
     <main>
       <section id="hero">
+        <video autoplay muted loop>
+          <source src="media\LandingPageVideo.mp4" type="video/mp4" />
+          <style>
+            main {
+              background-image: url(media\DJI_0016.jpg) ;
+            }
+          </style>
+        </video>
         <h1>TRUSTED.</h1>
         <h1>FAA CERTIFIED.</h1>
         <h1>PILOT.</h1>
@@ -350,21 +408,21 @@
     </div>
     <div>
       <section class="banner">
-        <div class="brand-logo" style="display: flex; flex-direction: column; margin-right: 250px;">
+        <div class="brand-logo">
           <img style="max-width: 120px; margin-left: 40px;" src="media\image 3faa_logo.png" alt="FAA Logo">
           <img src="media\image 2trust_logo.png" alt="Trust Logo">
         </div>
       
-        <div class="text-content" style="flex-grow: 1; padding: 0 20px; max-width: 600px;">
+        <div class="text-content">
           <h1 style="margin-bottom: 20px;">The Top Drone Operator in Middle Tennessee and Fort Myers Area</h1>
           <p>As a certified FAA Part 107 Drone Operator and *TRUST certified for recreational use, I possess a wide range of certifications that demonstrate my expertise. My qualifications ensure adherence to the highest standards of safety and professionalism, equipping me to handle various drone-related tasks and challenges.</p>
           <div class="buttons">
-            <button style="border: 3px solid #6CD4F4; background-color: white; color: #6CD4F4; padding: 14px 28px; font-size: 16px; cursor: pointer;" id="learnMore-btn">LEARN MORE</button>
-            <button onclick="location.href='url-to-contact-page'">CONTACT ME</button>
+            <a href="about.html"><button id="learnMore-btn">LEARN MORE</button></a>
+            <a href="contact.html"><button id="contact-btn">CONTACT ME</button></a>
           </div>
         </div>
         <div class="drone-image">
-          <img style="margin-left: 250px;" src="media\Group 12.png" alt="Aerial View Photography">
+          <img src="media\Group 12.png" alt="Aerial View Photography">
         </div>
       </section>
       
@@ -404,8 +462,8 @@
             <div class="card">
               <img src="media\DJI_0070.JPG" alt="Service 4">
               <div class="card-description">
-                <h1>MARKETING</h1>
-                <p>Boost your marketing with our drone service, delivering captivating aerial footage that grabs attention and elevates your brand's visual impact.</p>
+              <h1>PHOTOGRAMMETRY</h1>
+                <p>Generate precise 3D models with our photogrammetry drone service, transforming aerial imagery into detailed, accurate spatial data.</p>
               </div>
             </div>
           </div>

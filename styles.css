@@ -16,7 +16,7 @@ body, html {
 
 .index-class-body {
     height: auto;
-    background-image: url(media/DJI_0016.jpg);
+    background-color: #131313;
 }
 
 li {
@@ -218,13 +218,37 @@ footer p {
 .main-footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: top;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .main-footer div {
-    padding-right: 5rem;
+    flex: 1 1 250px; /* Allow each div to take up at least 250px and grow if there's space */
+    padding: 10px;
 }
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+@media (max-width: 992px) {
+    .main-footer {
+        flex-direction: column;
+        align-items: center; /* Center items when stacked */
+    }
+
+    .main-footer div {
+        width: 100%; /* Make each div take full width on smaller screens */
+        text-align: center; /* Center the content within each div */
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-footer div {
+        padding: 10px 0; /* Reduce padding for even smaller screens */
+        font-size: 14px; /* Adjust the font size */
+    }
+}
+
 
 li:list-number {
     list-style-image: url('anyimg1.gif');
