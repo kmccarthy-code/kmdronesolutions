@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <link rel='stylesheet' href='https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.css'><link rel="stylesheet" href="/styles.css">
     <title>KM Drone Solutions</title>
     <style>
       .logo-section {
-        background-image: url('media/Rectangle 1gallery_background.png');
+        background-image: url('/media/Rectangle 1gallery_background.png');
         height: 250px;
         display: flex;
         align-items: center;
         justify-content: center;
       }
       .logo-section img {
-        width: 500px;
+        width: 31.25rem;
         height: auto;
       }
       .white-section {
@@ -29,6 +30,7 @@
       }
     </style>
   </head>   
+
   <body class="gallery-class">
     <header class="header">
       <div class="navbar">
@@ -53,7 +55,16 @@
     <section class="logo-section">
       <img src="media\Group 1gallery.svg" alt="Logo">
     </section>
-    <section class="white-section"></section>
+    <section class="white-section">
+      <div class="pswp-gallery" id="my-gallery">
+        <!--Image 1-->
+        <a href="https://live.staticflickr.com/65535/53913117471_4694f274e4_o.jpg" data-pswp-width="4000" data-pswp-height="3000" target="_blank"><img src="https://live.staticflickr.com/65535/53913117471_08a39bb908_m.jpg" alt="" /></a>
+        <!--Image 2-->
+        <a href="https://live.staticflickr.com/65535/53913469174_d7413390f6_o.jpg" data-pswp-width="4000" data-pswp-height="3000" target="_blank"><img src="https://live.staticflickr.com/65535/53913469174_51559deb41_m.jpg" alt="" /></a>
+        <!--Image 3-->
+        <!-- <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-pswp-width="2500" data-pswp-height="1666" target="_blank"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt=""/></a> -->
+      </div>
+    </section>
     <script>
       const togglebtn = document.querySelector('.toggle_btn');
       const togglebtnIcon = document.querySelector('.toggle_btn i');
@@ -68,6 +79,8 @@
           : 'fa-solid fa-bars';
       }
     </script>
+    <script src="https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.min.js"></script>
+    <script type="module" src="./script.js"></script>=
   </body>
   <footer>
     <div>

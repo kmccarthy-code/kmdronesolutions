@@ -7,343 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css" />
     <title>KM Drone Solutions</title>
-    <style>
-.drone-operator-section {
-  background-color: #fff;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  padding: 66px 45px 22px 14px;
-}
-
-.content-wrapper {
-  align-self: flex-end;
-  width: 100%;
-  max-width: 1786px;
-}
-
-.main-content {
-  display: flex;
-  gap: 20px;
-}
-
-.left-column {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-}
-
-.logo-and-text {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
-
-.inner-content {
-  display: flex;
-  gap: 20px;
-}
-
-.logo-column {
-  display: flex;
-  flex-direction: column;
-  width: 28%;
-}
-
-.logo-wrapper {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-}
-
-.logo {
-  aspect-ratio: 0.99;
-  object-fit: contain;
-  object-position: center;
-  width: 167px;
-  align-self: center;
-  max-width: 100%;
-}
-
-.secondary-logo {
-  aspect-ratio: 2.87;
-  object-fit: contain;
-  object-position: center;
-  width: 100%;
-  margin-top: 81px;
-}
-
-.text-column {
-  display: flex;
-  flex-direction: column;
-  width: 72%;
-}
-
-.text-content {
-  display: flex;
-  margin-top: 25px;
-  flex-direction: column;
-  font-family: Inter, sans-serif;
-  color: #000;
-  text-align: center;
-}
-
-.title {
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 2.88px;
-  align-self: center;
-}
-
-.description {
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 3.2px;
-  margin-top: 43px;
-}
-
-.cta-buttons {
-  align-self: flex-end;
-  display: flex;
-  width: 423px;
-  max-width: 100%;
-  gap: 20px;
-  text-align: center;
-  justify-content: space-between;
-  margin: 19px 154px 0 0;
-  font: 800 20px Inter, sans-serif;
-}
-
-.learn-more-btn {
-  color: #6cd4f4;
-  margin: auto 0;
-}
-
-.contact-btn {
-  border-radius: 24px;
-  background-color: #6cd4f4;
-  color: #fff;
-  padding: 27px 36px;
-}
-
-.right-column {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-}
-
-.side-image {
-  aspect-ratio: 0.68;
-  object-fit: contain;
-  object-position: center;
-  width: 307px;
-  max-width: 100%;
-  flex-grow: 1;
-}
-
-.footnote {
-  color: #000;
-  letter-spacing: 1.08px;
-  text-align: center;
-  align-self: flex-start;
-  margin-top: 36px;
-  font: 300 12px Inter, sans-serif;
-}
-
-@media (max-width: 991px) {
-  .drone-operator-section {
-    max-width: 100%;
-    padding-right: 20px;
-  }
-
-  .content-wrapper {
-    max-width: 100%;
-  }
-
-  .main-content {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-  }
-
-  .left-column,
-  .text-column,
-  .logo-column {
-    width: 100%;
-  }
-
-  .logo-and-text,
-  .logo-wrapper,
-  .text-content {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-
-  .secondary-logo,
-  .description {
-    margin-top: 40px;
-  }
-
-  .cta-buttons {
-    margin-right: 10px;
-  }
-
-  .contact-btn {
-    padding: 0 20px;
-  }
-
-  .right-column {
-    width: 100%;
-  }
-
-  .side-image {
-    margin-top: 40px;
-  }
-
-  .footnote {
-    max-width: 100%;
-  }
-}
-
-.drone-image {
-  margin-left: 250px;
-}
-.banner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.brand-logo {
-  display: flex; flex-direction: column; margin-right: 250px;
-}
-.brand-logo img {
-  max-width: 200px;
-  height: auto;
-  margin-bottom: 25px;
-  align-content: center;
-}
-
-.text-content {
-  flex: 1;
-  margin: 0 20px;
-  max-width: 600px;
-}
-
-.text-content h1 {
-  color: black;
-  font: 700 24px Inter, sans-serif;
-}
-
-.text-content p {
-  font: 300 16px Inter, sans-serif;
-  color: black;
-  font-style: italic;
-  letter-spacing: 1px;
-}
-
-.buttons {
-  margin-top: 50px;
-}
-
-
-.drone-image img {
-  max-width: 300px;
-}
-
-@media (max-width: 991px) {
-  .banner {
-    flex-direction: column;
-    padding: 20px;
-    justify-content: center;
-  }
-
-  .brand-logo {
-    margin-right: 0;
-    margin-bottom: 20px;
-    flex-direction: row;
-  }
-
-  .text-content {
-    margin: 20px 0;
-    max-width: 100%;
-  }
-
-  .drone-image {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .drone-image img {
-    align-content: center;
-    margin-left: 0;
-    max-width: 100%;
-    align-self: center;
-  }
-
-  .buttons {
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px;
-  }
-}
-
-.text-content {
-  flex-grow: 1;
-  padding: 0 20px;
-  max-width: 600px;
-}
-
-.buttons button {
-  padding: 15px 35px;
-  margin-right: 10px;
-  border-radius: 17px;
-  cursor: pointer;
-  font: 700 15px Inter, sans-serif;
-}
-
-#contact-btn {
-  background-color: #6CD4F4;
-  color: white;
-  border: none;
-  transition: background-color 0.3s ease;
-}
-
-#contact-btn:hover {
-  background-color: #55b6d3;
-}
-
-
-#learnMore-btn { 
-  border: 3px solid #6CD4F4 ;
-  background-color:  white ;
-  color: #6CD4F4 ;
-  padding: 12px 28px ;
-  font-size: 16px ; 
-  cursor: pointer ;
-}
-
-#learnMore-btn:hover {
-  background: #6CD4F4;
-  color: white;
-}
-
-
-
- #hero video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1; /* Ensures the video stays behind other content */
- }
-    </style>
   </head>
   <body class="index-class-body">
     <header>
@@ -394,9 +57,8 @@
             }
           </style>
         </video>
-        <h1>TRUSTED.</h1>
-        <h1>FAA CERTIFIED.</h1>
-        <h1>PILOT.</h1>
+        <h1>TRUSTED.<br>FAA CERTIFIED.<br>PILOT.</h1>
+
         <p style="font-style: italic;">Servicing Middle Tennessee and Fort Myers, FL</p>
       </section>
       <div class="icon-bottom-right">
@@ -410,12 +72,14 @@
       <section class="banner">
         <div class="brand-logo">
           <img style="max-width: 120px; margin-left: 40px;" src="media\image 3faa_logo.png" alt="FAA Logo">
-          <img src="media\image 2trust_logo.png" alt="Trust Logo">
+          <img id="trust-logo" src="media\image 2trust_logo.png" style="
+          height: 90px;
+      " alt="Trust Logo">
         </div>
       
         <div class="text-content">
           <h1 style="margin-bottom: 20px;">The Top Drone Operator in Middle Tennessee and Fort Myers Area</h1>
-          <p>As a certified FAA Part 107 Drone Operator and *TRUST certified for recreational use, I possess a wide range of certifications that demonstrate my expertise. My qualifications ensure adherence to the highest standards of safety and professionalism, equipping me to handle various drone-related tasks and challenges.</p>
+          <p>As a certified FAA Part 107 Commercial Drone Operator and *TRUST certified for recreational use, I possess a wide range of certifications that demonstrate my expertise. My qualifications ensure adherence to the highest standards of safety and professionalism, equipping me to handle various drone-related tasks and challenges.</p>
           <div class="buttons">
             <a href="about.html"><button id="learnMore-btn">LEARN MORE</button></a>
             <a href="contact.html"><button id="contact-btn">CONTACT ME</button></a>
@@ -425,11 +89,14 @@
           <img src="media\Group 12.png" alt="Aerial View Photography">
         </div>
       </section>
+      <section style="background-color: white; font-size: small; font-style: italic;">
+        <p>*All operations are conducted under part 107. TRUST is only for recreational drone flying.</p>
+      </section>
+      
       
     </div>
     <div>
       <section class="services-section" id="services-section">
-        <img style="width: 100%;" src="media\Group 15services-logo.svg">
         <div class="services-container">
           <div class="cards-container">
             <div class="card">
@@ -463,12 +130,11 @@
             <div class="card">
               <img src="media\photogrametry_img.png" alt="Service 4">
               <div class="card-description">
-              <h1>PHOTOGRAMMETRY</h1>
+              <h1>PHOTO<wbr>GRAMMETRY</h1>
                 <p>Generate precise 3D models with our photogrammetry drone service, transforming aerial imagery into detailed, accurate spatial data.</p>
               </div>
             </div>
           </div>
-          <img style="width: 100%;" src="media\Rectangle 99white_bar.svg">
       </section>
     </div>
     <script>
