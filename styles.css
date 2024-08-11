@@ -786,6 +786,7 @@ li:list-email{
   width: 100%;
 }
 
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -814,3 +815,15 @@ li:list-email{
   margin: 0 auto; /* Center the images horizontally */
   text-align: center; /* Center the images vertically */
 }
+
+.circle {
+  width:100%;
+  height:10px;
+  font-size:20px;
+  color:#fff;
+  line-height:100px;
+  background: white;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
