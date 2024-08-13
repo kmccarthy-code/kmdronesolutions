@@ -16,7 +16,7 @@ body, html {
 
 .index-class-body {
     height: auto;
-    background-color: #131313;
+    background-color: #242424;
 }
 
 li {
@@ -71,7 +71,7 @@ header {
 }
 
 .action_btn {
-    background-color: #F4B206;
+    background-color: #57d4ef;
     color: #fff;
     padding: 0.7rem 2rem;
     border: none;
@@ -307,39 +307,10 @@ li:list-email{
 }
 
 .services-section {
-    background: rgb(87,212,239);
-    background: linear-gradient(180deg, rgba(87,212,239,1) 0%, rgba(50,121,137,1) 100%);
-}
-.services-section {
-    background: linear-gradient(180deg, #57d4ef, #327989);
-    background-size: 400% 400%;
-
-    -webkit-animation: AnimationName 8s ease infinite;
-    -moz-animation: AnimationName 8s ease infinite;
-    -o-animation: AnimationName 8s ease infinite;
-    animation: AnimationName 8s ease infinite;
+  background: rgb(87,212,239);
+  background: linear-gradient(180deg, rgba(87,212,239,1) 0%, rgba(0,174,212,1) 100%);
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 20%}
-    50%{background-position:100% 81%}
-    100%{background-position:0% 20%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 20%}
-    50%{background-position:100% 81%}
-    100%{background-position:0% 20%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:0% 20%}
-    50%{background-position:100% 81%}
-    100%{background-position:0% 20%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 20%}
-    50%{background-position:100% 81%}
-    100%{background-position:0% 20%}
-}
 .services-section {
     padding: 20px;
     background-color: #f9f9f9;
@@ -630,7 +601,7 @@ li:list-email{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    background-color: white;
+    background-color: #FAFAFA;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -653,13 +624,13 @@ li:list-email{
   }
   
   .text-content h1 {
-    color: black;
+    color: #242424;
     font: 700 24px Inter, sans-serif;
   }
   
   .text-content p {
     font: 300 16px Inter, sans-serif;
-    color: black;
+    color: #242424;
     font-style: italic;
     letter-spacing: 1px;
   }
@@ -818,7 +789,7 @@ li:list-email{
 
 .circle {
   width:100%;
-  height:10px;
+  height:15px;
   font-size:20px;
   color:#fff;
   line-height:100px;
@@ -827,3 +798,138 @@ li:list-email{
   margin-bottom: 25px;
 }
 
+/*** Works on common browsers ***/
+::selection {
+  background-color: #6CD4F4;
+  color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+  background-color: #6CD4F4;
+  color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+  background-color: #6CD4F4;
+  color: #fff;
+}
+
+::-ms-selection {
+  background-color: #6CD4F4;
+  color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+  background-color: #6CD4F4;
+  color: #fff;
+}
+
+.service-number {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.service-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.service-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: white;
+  color: black;
+}
+
+.image-container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.image-box {
+  flex: 1;
+  position: relative;
+  width: 25%; /* Each image takes up 25% width in row layout */
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-top {
+  top: 10%;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.overlay-content {
+  top: 75%;
+  transform: translateY(-50%);
+  padding: 0 10px;
+}
+
+.overlay-content h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.overlay-content h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.overlay-content p {
+  margin: 0;
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+
+  .image-box {
+    width: 100%;
+  }
+}
