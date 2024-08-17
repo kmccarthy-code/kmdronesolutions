@@ -13,6 +13,10 @@ body, html {
     overflow-x: hidden; /* Prevent horizontal scroll on the body */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 .index-class-body {
     height: auto;
@@ -36,7 +40,7 @@ a:hover {
 /* HEADER */
 header {
     position: relative;
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
 }
 
 .navbar {
@@ -133,7 +137,7 @@ header {
 
 /* HERO */
 section#hero {
-    height: calc(80vh - 60px);
+    height: calc(95vh - 60px);
     display: flex;
     flex-direction: column;
     justify-content: center;
