@@ -16,7 +16,7 @@ body, html {
 
 .index-class-body {
     height: auto;
-    background-color: #242424;
+    background-color: #131313;
 }
 
 li {
@@ -36,7 +36,7 @@ a:hover {
 /* HEADER */
 header {
     position: relative;
-    padding: 0 2rem;
+    padding: 1.5rem 2rem;
 }
 
 .navbar {
@@ -133,7 +133,7 @@ header {
 
 /* HERO */
 section#hero {
-    height: calc(100vh - 60px);
+    height: calc(80vh - 60px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -209,7 +209,7 @@ section#hero {
 
 footer {
     text-align: left;
-    background-color: #252525;
+    background-color: #131313;
     color: white;
     font-family: "Inter", sans-serif;
     font-weight: 200;
@@ -219,7 +219,7 @@ footer {
   }
 
 footer section {
-    background-color: black;
+    background-color: #131313;
     padding: 100px;
     display: flexbox;
     width: 100%;
@@ -306,23 +306,6 @@ li:list-email{
     padding-top: 20px;
 }
 
-.services-section {
-  background: rgb(87,212,239);
-  background: linear-gradient(180deg, rgba(87,212,239,1) 0%, rgba(0,174,212,1) 100%);
-}
-
-.services-section {
-    padding: 20px;
-    background-color: #f9f9f9;
-    position: relative;
-}
-.services-logo {
-    position: static;
-    top: 25px;
-    left: 1px;
-    padding-top: 0;
-    margin-top: 0;
-}
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -602,7 +585,7 @@ li:list-email{
     align-items: center;
     justify-content: space-evenly;
     background-color: #FAFAFA;
-    padding: 20px;
+    padding: 65px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
@@ -625,7 +608,7 @@ li:list-email{
   
   .text-content h1 {
     color: #242424;
-    font: 700 24px Inter, sans-serif;
+    font: 800 42px Inter, sans-serif;
   }
   
   .text-content p {
@@ -827,109 +810,426 @@ li:list-email{
   color: #fff;
 }
 
-.service-number {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 24px;
-  font-weight: bold;
-}
 
-.service-image {
+.service-card {
+  float: left;
+  width: 25%; /* Four cards with space between them */
+  height: 450px;
   background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 150px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
-
-.service-title {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.service-description {
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.learn-more {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  border: 2px solid white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.learn-more:hover {
-  background-color: white;
-  color: black;
-}
-
-.image-container {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-}
-
-.image-box {
-  flex: 1;
+  overflow: hidden;
   position: relative;
-  width: 25%; /* Each image takes up 25% width in row layout */
 }
 
-.image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.service-card:nth-child(1) {
+  background-image: url('https://live.staticflickr.com/65535/53914216852_d01f7cb25f_b.jpg');
+}
+
+.service-card:nth-child(2) {
+  background-image: url('/media/DJI_0009 (1).JPG');
+}
+
+.service-card:nth-child(3) {
+  background-image: url('https://live.staticflickr.com/65535/53915532045_86f9286d92_b.jpg');
+}
+
+.service-card:nth-child(4) {
+  background-image: url('https://live.staticflickr.com/65535/53915194766_717f058a48_b.jpg');
 }
 
 .overlay {
   position: absolute;
-  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
   color: white;
-  text-align: left;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: '', sans-serif;
+  background: rgba(0, 0, 0, 0.25);
 }
 
-.overlay-top {
-  top: 10%;
-  font-size: 1.5em;
-  font-weight: bold;
-  padding-left: 10px;
+.overlay:hover {
+  background: rgba(0, 0, 0, 0.45);
 }
 
-.overlay-content {
-  top: 75%;
-  transform: translateY(-50%);
-  padding: 0 10px;
+.number {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 282px;
 }
 
-.overlay-content h1 {
-  margin: 0;
-  font-size: 2em;
-}
-
-.overlay-content h2 {
+h2 {
+  font-weight: 800;
+  font-size: 22px;
   margin: 10px 0;
-  font-size: 1.5em;
 }
 
-.overlay-content p {
-  margin: 0;
-  font-size: 1em;
+p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .service-card {
+      width:50%; /* Two cards per row */
+  }
 }
 
 @media (max-width: 768px) {
+  .service-card {
+      width: 100%; /* One card per row */
+  }
 
-  .image-box {
+  h2 {
+      font-size: 18px;
+  }
+
+  p {
+      font-size: 12px;
+  }
+
+  .number {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay {
+      padding: 15px;
+  }
+
+  h2 {
+      font-size: 16px;
+  }
+
+  p {
+      font-size: 12px;
+  }
+
+  .number {
+      font-size: 18px;
+      margin-bottom: 320px;
+  }
+}
+
+/* Clearfix */
+.services-section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.request-section {
+  background-color: white;
+}
+
+.cert-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center
+}
+
+.cert-section img {
+  width: 150px;
+  height: auto;
+  margin: 20px;
+}
+
+.cert-section h1{
+  color: white; 
+  padding: 10px; 
+  font: 900 40px "Inter", sans-serif; 
+  font-style: italic;
+}
+
+@media (max-width: 480px) {
+  .cert-section
+  {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cert-section img {
+    width: 150px;
+  }
+
+  .cert-section h1 {
+    font-size: 30px;
+  }
+}
+.service-section {
+  background-color: #131313;
+  padding: 35px;
+}
+
+.service-title h1 {
+  color: white;
+  font: 900 40px "Inter", sans-serif;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.service-section {
+  background-image: url('/media/Group 1.svg');
+  background-color: #131313;
+}
+.service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  text-align: center;
+  flex-wrap: wrap;
+  max-width: 1250px;
+}
+
+.service-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: left;
+  flex-wrap: wrap;
+  max-width: 1300px;
+}
+
+.service-item {
+  font: 300 16px "Inter", sans-serif;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 500px; /* Adjust the width as needed */box-shadow: 04px8pxrgba(0, 0, 0, 0.1);
+  margin: 20px; /* Center the card horizontally */text-align: center; /* Center-align the text inside the card */
+  margin-right: 15px;
+  -webkit-box-shadow: 0px 0px 50px -22px rgba(255,255,255,0.77);
+  -moz-box-shadow: 0px 0px 50px -22px rgba(255,255,255,0.77);
+  box-shadow: 0px 0px 50px -22px rgba(255,255,255,0.77);
+
+}
+
+.service-item h1 {
+  color: black;
+  font-weight: 900;
+}
+
+.service-item p {
+  font-weight: 500;
+  color: black ;
+}
+
+.service-title h3 {
+  color: white;
+  font: 900 20px "Inter", sans-serif;
+  font-style: italic;
+  text-align: left;
+  margin-top: 13px;
+}
+
+.contact-section {
+  background-color: #FFFFFF;
+  padding: 25px;
+  box-shadow: #242424;
+}
+
+.contact-title h1 {
+  color: #242424;
+  font: 900 30px "Inter", sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-container-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  padding: 20px;
+  width: 500px; /* Adjust the width as needed */box-shadow: 04px8pxrgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 68px -16px rgba(36,36,36,0.59);
+  -moz-box-shadow: 0px 0px 68px -16px rgba(36,36,36,0.59);
+  box-shadow: 0px 0px 68px -16px rgba(36,36,36,0.59);
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/media/DJI_0016.jpg");
+
+  /* Set a specific height */
+  min-height: 150px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.para-text {
+  text-align: center;
+  font: 900 40px "Inter", sans-serif;
+  font-style: italic;
+  color: white;
+
+}
+
+.para-btn button{
+  background-color: #6CD4F4; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 9px;
+  font-weight: 800;
+}
+
+.para-btn button:hover {
+  background-color: #55b6d3;
+  cursor: pointer;
+}
+
+.para-btn {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.contact-form-section,
+.contact-info {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.contact-form-section {
+  max-width: 600px;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.contact-form-section h2 {
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.submit-btn {
+  display: inline-block;
+  background-color: #6CD4F4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contact-info {
+  max-width: 500px;
+}
+
+.contact-info h3 {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+  section {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .contact-form-section,
+  .contact-info {
     width: 100%;
+    margin: 20px 0;
+  }
+
+  .contact-info {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .links {
+    display: none;
+  }
+
+  .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    width: 100%;
+    margin: 10px0;
+  }
+
+  .service-titleh1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-titleh1 {
+    font-size: 28px;
+  }
+
+  .service-item {
+    font-size: 14px;
+    padding: 15px;
   }
 }
